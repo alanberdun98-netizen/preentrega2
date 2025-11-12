@@ -1,13 +1,13 @@
 /*reset de css*/
 /* general */
-body{
+body {
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 35px;
 
-    }
+}
 
 hr {
     height: 20px;
@@ -151,7 +151,7 @@ h1 .texto-servicio {
     border-radius: 45px;
     box-shadow: 5px 5px 5px rgb(154, 50, 156);
     mask-image: linear-gradient(rgb(216, 86, 86) 80%,
-    transparent);
+            transparent);
 }
 
 .servicio {
