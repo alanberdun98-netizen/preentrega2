@@ -1,0 +1,18 @@
+$primary-color: blue;
+
+body {
+    background-color: $primary-color;
+}
+
+/* anidamiento */
+main .servicio-2 {
+
+    div .servicio-1 {
+        div .img-1 .img-2 .img-3 .img-4 .img-5 {
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-areas:
+                " totoro gorra uniforme diseño personalizado "
+            ;
+        }
+    }
+}
