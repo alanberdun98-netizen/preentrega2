@@ -1,17 +1,12 @@
-/* Error: expected "{".
- *    ,
- * 12 |             grid-template-columns: repeat(2, 1fr);
- *    |                                                  ^
- *    '
- *   style.scss 12:50  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 12 \2502              grid-template-columns: repeat(2, 1fr);\d\a    \2502                                                   ^\a    \2575 \a   style.scss 12:50  root stylesheet';
+@charset "UTF-8";
+body {
+  background-color: blue;
 }
+
+/* anidamiento */
+main .servicio-2 div .servicio-1 div .img-1 .img-2 .img-3 .img-4 .img-5 {
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-areas: " totoro gorra uniforme diseño personalizado ";
+}
+
+/*# sourceMappingURL=estilo.css.map */

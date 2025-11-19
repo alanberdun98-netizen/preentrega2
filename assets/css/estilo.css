@@ -1,282 +1,120 @@
-/*reset de css*/
-/* general */
+/* ---------------------------------------------------
+ESTILO KAWAII PASTEL PARA BORDEN BORDADOS
+-----------------------------------------------------*/
+
+/* Tipografías generales */
 body {
-    background-image: url(../img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 35px;
-
+    font-family: "Poppins", sans-serif;
+    background-color: #fff8fc; /* rosa pastel suave */
+    color: #5a4a52;
 }
 
-hr {
-    height: 20px;
-}
-
-div {
-    padding: 25px;
-    border: 15px;
-    margin: 25px;
-}
-
-.link {
-    text-decoration: none;
-    color: #080808;
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-}
-
-a {
-    height: 50px;
-}
-
+/* Reset básico */
 img {
-    border-radius: 15px;
-}
-
-input {
-    margin-bottom: 10px;
-    padding: 15px;
-    font-size: 1rem;
-    border: 1px solid #000000;
-    border-radius: 5px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
-    align-items: center;
-}
-
-header.hamburguesa {
-    color: white;
-    font-size: 35px;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-}
-
-header nav ul {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-}
-
-header nav ul li .submenu {
-    position: relative;
-}
-
-header nav ul li.submenu>ul {
-    display: none;
-    position: absolute;
-    width: 140px;
-    padding: 10px;
-    background-color: #cc8f8f;
-}
-
-header nav ul li.submenu>ul li {
-    padding: 5px 0;
-}
-
-header nav ul li.submenu:hover>ul {
-    display: block;
-}
-
-header nav ul li a {
-    text-decoration: none;
-}
-
-header nav ul :hover {
-    color: aqua;
-}
-
-header nav ul:nth-child(even) {
-    background-color: #f2f2f2;
-    /* pares con fondo gris claro */
-}
-
-/* INDEX*/
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
-}
-
-h1.titulo {
-    color: rgb(246, 175, 221);
-    font-family: lobster, sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    text-transform: capitalize;
-    font-size: 40px;
-    text-shadow: 2px 3px 3px rgb(154, 50, 156);
-    margin: auto;
-}
-
-h2 {
-    font-family: 'Dancing Script', cursive;
-    color: var(--color-accent);
-    margin-bottom: 0.5em;
-    color: #666666;
-    font-size: 1.8rem;
-}
-
-/* SERVICIOS */
-.parrafo-servicio {
-    color: #aa58d6;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    text-decoration: underline;
-}
-
-h1 .texto-servicio {
-    color: #d488fd;
-}
-
-.img-1,
-.img-2,
-.img-3,
-.img-4,
-.img-5 {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid rgb(230, 187, 250);
-    border-radius: 45px;
-    box-shadow: 5px 5px 5px rgb(154, 50, 156);
-    mask-image: linear-gradient(rgb(216, 86, 86) 80%,
-            transparent);
-}
-
-.servicio-1 {
-    padding: 45px;
-}
-
-/*cliente*/
-
-.cuenta {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    display: block;
-    list-style: none;
-    border-radius: 50px;
-    content: attr()
-}
-
-/* CONTACTO */
-/* footer */
-.footer {
-    color: rgb(0, 0, 0);
-}
-
-/* portafolio */
-.texto {
-    color: #3f3f3f
-}
-
-.grilla {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "bordadoindex4 bordadoindex1 bordadoindex2 bordadoindex3 "
-    ;
-    width: 100%;
-    max-width: 800px;
-    justify-content: center;
-    gap: 20px;
-}
-
-.grilla div {
-    position: relative;
-}
-
-.grilla div::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0%;
-    background-color: #0000007c;
-    opacity: 0;
-    z-index: 1;
-}
-
-.grilla>div:hover {
-    cursor: pointer;
-}
-
-.grilla>div:hover::after {
-    opacity: 1;
-}
-
-.grilla div:nth-child(2) {
-    grid-area: bordadoindex1;
-    position: relative;
-}
-
-.grilla div:nth-child(2) p {
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-    color: #f2f2f2;
-    opacity: 0;
-}
-
-.grilla div:nth-child(2):hover p {
-    opacity: 1;
-    background: none;
-}
-
-.grilla div:first-child {
-    grid-area: bordadoindex2;
-}
-
-.grilla div:nth-child(3) {
-    grid-area: bordadoindex3;
-}
-
-.grilla div:nth-child(4) {
-    grid-area: bordadoindex4;
-}
-
-.grilla div:nth-chilD(5) {
-    grid-area: bordadoindex5;
-}
-
-.grilla div img {
-    width: 100%;
-    object-fit: cover;
+    max-width: 100%;
     height: auto;
+    display: block;
 }
 
-.grilla {
-    grid-template-columns: repeat(2, 300px);
-    grid-template-areas:
-        "bordadoindex4 bordadoindex1"
-        "bordadoindex2 bordadoindex3"
-    ;
+/* ---------------------------------------------------
+NAVBAR
+-----------------------------------------------------*/
+.navbar {
+    background-color: #ffe9f3 !important; /* rosa super pastel */
+    border-bottom: 2px solid #ffd4ea;
 }
 
-/*tablet*/
-@media(min-width:480px) {}
+.navbar-brand {
+    font-size: 1.7rem;
+    color: #d26aa8 !important;
+    letter-spacing: 1px;
+}
 
-/*desktop*/
-@media(min-width:1180px) {}
+.nav-link {
+    color: #7a5f6c !important;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
 
-/*movil*/
-@media (max-width:576px) {
-    header.hamburguesa {
-        display: block;
-    }
+.nav-link:hover,
+.nav-link.active {
+    color: #d26aa8 !important;
+}
 
-    header nav {
-        display: none
-    }
+/* Botón hamburguesa */
+.navbar-toggler {
+    border-color: #d26aa8;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0.4);
+}
+
+/* ---------------------------------------------------
+TITULOS
+-----------------------------------------------------*/
+.titulo-servicio {
+    font-size: 2.2rem;
+    color: #cf5fa4;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(255, 144, 203, 0.4);
+}
+
+/* ---------------------------------------------------
+GALERÍA DE SERVICIOS
+-----------------------------------------------------*/
+
+/* Imágenes kawaii */
+.servicio-img {
+    border-radius: 18px;
+    transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animado */
+.servicio-img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 18px rgba(255, 160, 220, 0.4);
+}
+
+/* Contenedor responsive */
+article {
+    transition: 0.3s ease;
+}
+
+/* ---------------------------------------------------
+FOOTER
+-----------------------------------------------------*/
+footer {
+    background-color: #ffe9f3 !important;
+    border-top: 2px solid #ffd4ea;
+}
+
+footer p {
+    color: #7a5f6c;
+    font-size: 0.95rem;
+}
+
+/* ---------------------------------------------------
+BOTONES 
+-----------------------------------------------------*/
+.btn-kawaii {
+    background-color: #ffb8d9;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-kawaii:hover {
+    background-color: #ff94ca;
+    transform: scale(1.05);
+}
+
+/* ---------------------------------------------------
+ANIMACIÓN SUAVE GLOBAL
+-----------------------------------------------------*/
+* {
+    scroll-behavior: smooth;
 }
