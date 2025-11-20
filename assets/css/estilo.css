@@ -21,10 +21,6 @@ img {
 /* ---------------------------------------------------
 NAVBAR
 -----------------------------------------------------*/
-.navbar {
-    background-color: #ffe9f3 !important; /* rosa super pastel */
-    border-bottom: 2px solid #ffd4ea;
-}
 
 .navbar-brand {
     font-size: 1.7rem;
@@ -51,34 +47,42 @@ NAVBAR
 .navbar-toggler-icon {
     filter: brightness(0.4);
 }
+.navbar {
+    background: linear-gradient(90deg, #f4c2d7, #f3b8c9, #f5d4df) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+}
+
 
 /* ---------------------------------------------------
 TITULOS
 -----------------------------------------------------*/
 .titulo-servicio {
     font-size: 2.2rem;
-    color: #cf5fa4;
+    color: #f1eff0;
     font-weight: 700;
-    text-shadow: 0 2px 5px rgba(255, 144, 203, 0.4);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.863);
 }
 
 /* ---------------------------------------------------
 GALERÍA DE SERVICIOS
 -----------------------------------------------------*/
 
-/* Imágenes kawaii */
+
 .servicio-img {
     border-radius: 18px;
     transition: transform 0.25s ease, box-shadow 0.3s ease;
 }
 
-/* Hover animado */
+
 .servicio-img:hover {
     transform: scale(1.07);
     box-shadow: 0 10px 18px rgba(255, 160, 220, 0.4);
 }
 
-/* Contenedor responsive */
+
 article {
     transition: 0.3s ease;
 }
@@ -130,24 +134,23 @@ GRILLA
     justify-items: center;
 }
 
-/* Contenedor de cada tarjeta */
+
 .grilla div {
-    position: relative; /* necesario para el overlay */
+    position: relative; 
     background-color: #ffeef4;
     border-radius: 14px;
     padding: 1.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: transform .3s ease, box-shadow .3s ease;
-    overflow: hidden; /* para que el overlay no salga */
+    overflow: hidden; 
 }
 
-/* Hover de la tarjeta */
+
 .grilla div:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagen con marco estilo bordado */
 .grilla img {
     width: 250px;
     border-radius: 12px;
@@ -160,7 +163,6 @@ GRILLA
     margin: 0 auto;
 }
 
-/* Hover de la imagen */
 .grilla div:hover img {
     transform: scale(1.08);
     box-shadow: 0 0 0 4px #ffb6d9, 0 0 15px rgba(255, 182, 217, 0.6);
@@ -210,6 +212,7 @@ INDEX
     display: block;
     margin: 0 auto;
 }
+/* SERVICIO */
 
 /* Estilo elegante pastel rosa */
 .parrafo-index{
@@ -232,6 +235,6 @@ INDEX
 
 /* Fondo general elegante */
 body {
-    background: linear-gradient(to bottom, #fdf7fa, #f7ebf0);
+    background: linear-gradient(to bottom, #fc0086, #f7ebf0);
     padding: 2rem;
 }
