@@ -1,12 +1,14 @@
-/* ---------------------------------------------------
-ESTILO KAWAII PASTEL PARA BORDEN BORDADOS
------------------------------------------------------*/
-
 /* Tipografías generales */
 body {
     font-family: "Poppins", sans-serif;
     background-color: #fff8fc; /* rosa pastel suave */
     color: #5a4a52;
+        background: linear-gradient(
+        135deg,
+        #ffe7f1,
+        #ffd9e7,
+        #ffeedd
+    );
 }
 
 /* Reset básico */
@@ -113,8 +115,123 @@ BOTONES
 }
 
 /* ---------------------------------------------------
+PORTAFOLIO
+-----------------------------------------------------*/
+
+/* ===========================
+GRILLA
+=========================== */
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+}
+
+/* Contenedor de cada tarjeta */
+.grilla div {
+    position: relative; /* necesario para el overlay */
+    background-color: #ffeef4;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+    overflow: hidden; /* para que el overlay no salga */
+}
+
+/* Hover de la tarjeta */
+.grilla div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen con marco estilo bordado */
+.grilla img {
+    width: 250px;
+    border-radius: 12px;
+    padding: 6px;
+    background: #fff6fa;
+    border: 3px double #ffb6d9;
+    box-shadow: 0 0 0 4px #ffd8eb;
+    transition: transform .3s ease, box-shadow .3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hover de la imagen */
+.grilla div:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 4px #ffb6d9, 0 0 15px rgba(255, 182, 217, 0.6);
+}
+
+/* =====================
+TEXTO DENTRO DE LA IMAGEN
+====================== */
+
+.grilla p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 182, 217, 0.75); /* rosa translúcido */
+    color: #5c3a47;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity .4s ease, transform .4s ease;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.grilla div:hover p {
+    opacity: 1;
+    transform: translateY(0);}
+
+
+/* ---------------------------------------------------
 ANIMACIÓN SUAVE GLOBAL
 -----------------------------------------------------*/
 * {
     scroll-behavior: smooth;
+}
+/*---------------------------------------------------
+INDEX 
+-----------------------------------------------------*/
+    .bordado-horizontal {
+    width: 100%;
+    height: auto;            
+    object-fit: cover;        
+    object-position: center;  
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo elegante pastel rosa */
+.parrafo-index{
+    font-family: "Cormorant Garamond", serif; 
+    font-size: 1.25rem;
+    line-height: 1.85;
+    color: #4a3a3f; /* tono cálido sobrio */
+    background: #f9eef2; /* rosa pastel muy tenue */
+    padding: 1.5rem 2rem;
+    border-left: 4px solid #e3a8b8; /* detalle elegante */
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    letter-spacing: 0.3px;
+
+    /* sombras suaves y elegantes */
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.06),
+        0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Fondo general elegante */
+body {
+    background: linear-gradient(to bottom, #fdf7fa, #f7ebf0);
+    padding: 2rem;
 }

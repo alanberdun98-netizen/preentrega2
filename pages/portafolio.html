@@ -4,79 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende más sobre nosotros</title>
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="../assets/css/estilo.css">
-    <title>aprende mas sobre nosotros</title>
-    <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--fontawesome-->
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
-    <div>
-        <nav class="navbar navbar-expand-lg>
-            <div class=" container-fluid">
-            <h1 class="titulo">Borden-Bordados</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portafolio.html">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./cliente.html">Mi cuenta</a>
-                    </li>
-            </div>
-        </nav>
-    </div>
-    <hr>
-    <header>
-    </header>
-    <h2 class="texto">en borden bordados nos dedicamos a brindar el mejor servicio de bordado personalizado para
-        todo
-        tipo de prendas y accesorios. con años de experiencia en la industria, nos enorgullece ofrecer productos de
-        alta
-        calidad que reflejan la identidad y estilo de nuestros clientes.</h2>
-    <section class="grilla">
-        <div class="caja1">
 
-            <img src="../assets/img/bordadoindex1.jpg" alt="bordadoindex1" width="160px">
+    <!-- ================= HEADER ================= -->
+    <header>
+<nav class="navbar navbar-light bg-light shadow-sm">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand titulo fw-bold" href="../index.html">
+            Borden Bordados
+        </a>
+
+        <!-- BOTÓN HAMBURGUESA SIEMPRE VISIBLE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENÚ -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2">
+
+                <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="./portafolio.html">Portafolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cliente.html">Mi cuenta</a></li>
+
+            </ul>
         </div>
-        <div class="caja2">
-            <p>Soy Lily 💖 bordar
-                bordados personalizados,
-                Títeres, pintorcitos, parches y más 💕
-                Hecho a mano con amor.</p>
-            <img src="../assets/img/bordadoindex2.jpg" alt="bordadoindex2" width="160px">
-        </div>
-        <div class="caja3">
-            <img src="../assets/img/bordadoindex3.jpg" alt="bordadoindex3" width="160px">
-        </div>
-        <div class="caja4">
-            <img src="../assets/img/bordadoindex4.jpg" alt="bordadoindex4" width="160px">
-        </div>
-    </section>
-    <footer>
-        <p class="footer">Derechos reservados 2024</p>
-    </footer>
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+
+</nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="container my-5">
+
+        <h2 class="texto text-center mb-5">
+            En Borden Bordados nos dedicamos a brindar el mejor servicio de bordado personalizado para todo tipo de
+            prendas y accesorios. Con años de experiencia en la industria, nos enorgullece ofrecer productos de alta
+            calidad que reflejan la identidad y estilo de nuestros clientes.
+        </h2>
+
+        <!-- GRID mejorada -->
+        <section class="grilla d-grid gap-4">
+
+            <div class="caja1 text-center">
+                <img src="../assets/img/bordadoindex1.jpg" alt="bordadoindex1" width="160">
+                <p>Soy Lily 💖 Realizo bordados personalizados, títeres, pintorcitos, parches y más 💕<br>
+                    Hecho a mano con amor.    </p>
+            </div>
+
+            <div class="caja2 text-center">
+                <img src="../assets/img/bordadoindex2.jpg" alt="bordadoindex2" width="160">
+                <p>Cada creación de nuestra tienda está bordada cuidadosamente, combinando dedicación, cariño y detalles únicos.</p>
+            </div>
+
+            <div class="caja3 text-center">
+                <img src="../assets/img/bordadoindex3.jpg" alt="bordadoindex3" width="160">
+                <p>Diseños hechos a mano, pensados especialmente para cada cliente. Cada pieza es única y creada con dedicación.</p>
+            </div>
+
+            <div class="caja4 text-center">
+                <img src="../assets/img/bordadoindex4.jpg" alt="bordadoindex4" width="160">
+                <p>En nuestra tienda priorizamos materiales de alta calidad para garantizar bordados duraderos y hermosos.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="text-center py-3 bg-light">
+        <p class="footer mb-0">Derechos reservados 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
